@@ -10,8 +10,8 @@
           <div class='flex'>
             <b>Email:</b>&nbsp;kuntanut.s@gmail.com&nbsp;
             <div class='relative no-print cursor-default'>
-              <div class='bg-black txt-white border-black text-center' style="width:20px;"
-                   @mouseenter="setTooltip(true)" @mouseleave="setTooltip(false)">?
+              <div class='bg-black txt-white border-black text-center' style="width:20px;" @mouseenter="setTooltip(true)"
+                @mouseleave="setTooltip(false)">?
               </div>
               <div v-show="mailTooltip" class='tooltip pa-1 bg-black txt-white border-black'>
                 Email are difference from name because I try my name as email but got invalid, so
@@ -57,9 +57,9 @@
     </Box>
     <Box color='orange' class='mt-2' title='Experiences'>
       <div id='experience'>
-        <div v-for="{li, txt} in exp" :key="li">
-          <li class='txt-orange'>{{li}}</li>
-          <div class='py-1 ml-5'>{{txt}}.</div>
+        <div v-for="{ li, txt } in exp" :key="li">
+          <li class='txt-orange'>{{ li }}</li>
+          <div class='py-1 ml-5'>{{ txt }}.</div>
         </div>
       </div>
     </Box>
@@ -96,7 +96,7 @@ export default defineComponent({
         "Web hosting: Firebase",
         "Screen drawing tool: Epic Pen",
         "Python basic data science tools: Pandas, ScikitLearn"
-      ] as Array<string>,
+      ] as string[],
       exp: [
         {
           li: "EdVISORY co., ltd. / Jan 2021 - Present",
@@ -146,7 +146,7 @@ export default defineComponent({
           li: "Part-time academician at LIC-Ignite / Jun - Aug 2017",
           txt: "A part-time career making explanation from high school level exercises of Physics and Mathematics"
         }
-      ] as Array<object>
+      ] as Record<string, string>[]
     }
   },
   methods: {
@@ -169,24 +169,29 @@ export default defineComponent({
   width: 210mm;
   margin: auto;
 }
+
 li::marker {
   font-size: 22px;
 }
+
 #interest {
   li::marker {
     content: "☨ ";
   }
 }
+
 #skill {
   li::marker {
     content: "♰ ";
   }
 }
+
 #experience {
   li::marker {
     content: "☩ ";
   }
 }
+
 .tooltip {
   width: 200px;
   position: absolute;
@@ -194,13 +199,14 @@ li::marker {
   top: -50px;
   z-index: 2;
 }
+
 @page {
   size: A4;
   margin: 0;
 }
+
 @media print {
   .no-print {
     display: none;
   }
-}
-</style>
+}</style>
