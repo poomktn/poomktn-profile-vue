@@ -1,14 +1,12 @@
+<script setup lang="ts">
+const props = defineProps({
+  color: String,
+  title: String,
+})
+</script>
 <template>
-  <div :class="`pa-2 border-${color}`">
-    <h3 v-if="title" :class="`txt-${color} text-center`">{{ title }}</h3>
+  <div :class='`pa-2 border-${props.color}`'>
+    <h3 v-if='props.title' :class='`txt-${props.color} text-center`'>{{ props.title }}</h3>
     <slot />
   </div>
 </template>
-<script lang="ts">
-export default {
-  props: {
-    color: String,
-    title: String,
-  },
-}
-</script>
