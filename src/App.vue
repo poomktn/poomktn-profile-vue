@@ -76,7 +76,7 @@ function print() {
       <img width="300" height="300" :src="require('@/assets/images/Edvisory.png')" alt="" />
       <div class="ml-2">
         <Box color="orange">
-          <div class="mb-1"><b>Tel:</b> 082-322-7582</div>
+          <div class="mb-1"><b>Tel:</b> 063-161-6212</div>
           <div class="flex">
             <b>Email:</b>&nbsp;kuntanut.s@gmail.com&nbsp;
             <div class="relative no-print cursor-default">
