@@ -5,7 +5,7 @@ const mailTooltip = ref(false)
 const skill: string[] = [
   'Programming languages: JavaScript, TypeScript, Python',
   'Moderate English writing and communication skills',
-  'JavaScript Front-end frameworks: Vue(2&3) , Vuetify, Quasar, Nuxt, React',
+  'Front-end frameworks: React Hook, Vue(2&3), Vuetify, Quasar, Nuxt',
   'UML design tools: Draw.io, Visual Paradigm',
   'Interface design tool: Figma, Zeplin',
   'Web hosting: Firebase',
@@ -14,7 +14,11 @@ const skill: string[] = [
 ]
 const exp: Record<string, string>[] = [
   {
-    li: 'EdVISORY co., ltd. / Jan 2021 - Present',
+    li: 'Magic Box Solutions Co., Ltd. / Feb 2023 - Present',
+    txt: 'Working as a front-end developer, Mainly using React Hook, TypeScript as front-end frameworks for many products and projects',
+  },
+  {
+    li: 'EdVISORY Co., Ltd. / Jan 2021 - Feb 2023',
     txt: 'Working as a front-end developer, Mainly using Nuxt, Vue (2&3) as front-end frameworks for many products and projects',
   },
   {
@@ -73,7 +77,7 @@ function print() {
 <template>
   <div class="App">
     <div class="flex justify-center">
-      <img width="300" height="300" :src="require('@/assets/images/Edvisory.png')" alt="" />
+      <img width="300" height="300" :src="require('@/assets/images/profile.jpg')" alt="" class='profile-img' />
       <div class="ml-2">
         <Box color="orange">
           <div class="mb-1"><b>Tel:</b> 063-161-6212</div>
@@ -88,7 +92,7 @@ function print() {
                 ?
               </div>
               <div v-show="mailTooltip" class="tooltip pa-1 bg-black txt-white border-black">
-                Email are difference from name because I try my name as email but got invalid, so I decide to
+                Email is difference from name because I try my name as email but got invalid, so I decide to
                 change vowels of my name
               </div>
             </div>
@@ -188,6 +192,10 @@ li::marker {
   left: 20px;
   top: -50px;
   z-index: 2;
+}
+
+.profile-img {
+  border-radius: 50%;
 }
 
 @page {
