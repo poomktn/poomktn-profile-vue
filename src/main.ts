@@ -1,5 +1,5 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-// import store from "./store";
+import { Box } from './components'
 
-createApp(App).mount("#app");
+createApp(App).component('Box', Box).mount("#app");
