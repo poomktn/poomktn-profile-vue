@@ -60,4 +60,10 @@ li::marker {
   size: A4;
   margin: 0;
 }
+
+@media print {
+  :global(.no-print) {
+    display: none;
+  }
+}
 </style>

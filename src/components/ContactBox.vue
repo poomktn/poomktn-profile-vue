@@ -37,9 +37,4 @@ function setTooltip(bool: boolean) {
   top: -50px;
   z-index: 2;
 }
-@media print {
-  .no-print {
-    display: none;
-  }
-}
 </style>
