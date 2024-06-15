@@ -2,9 +2,9 @@
 const skill: string[] = [
   'Programming languages: JavaScript, TypeScript, Python',
   'Moderate English writing and communication skills',
-  'Front-end frameworks: React Hook, Vue(2&3), Vuetify, Quasar, Nuxt',
-  'UML design tools: Draw.io, Visual Paradigm',
-  'Interface design tool: Figma, Zeplin',
+  'Front-end frameworks: React Hook, Vue 2&3, Vuetify, Quasar, Nuxt, React-Native(Android)',
+  'UML design tools: Draw.io',
+  'Interface design tool: Figma',
   'Web hosting: Firebase',
   'Screen drawing tool: Epic Pen',
   'Python basic data science tools: Pandas, ScikitLearn',

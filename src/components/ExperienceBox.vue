@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const exp: Record<string, string>[] = [
+type ExperienceProps = {
+  li: string
+  txt: string
+}
+const exp: ExperienceProps[] = [
   {
     li: 'Magic Box Solutions Co., Ltd. / Feb 2023 - Present',
     txt: 'Working as a front-end developer, Mainly using React Hook, TypeScript as front-end frameworks for many products and projects',

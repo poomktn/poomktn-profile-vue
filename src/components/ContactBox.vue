@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
+const TELEPHONE_NUMBER = '092-416-4261'
+const GITHUB_LINK = 'https://github.com/poomktn'
 const mailTooltip = ref(false)
 
 function setTooltip(bool: boolean) {
@@ -9,15 +10,12 @@ function setTooltip(bool: boolean) {
 </script>
 <template>
   <Box color="orange">
-    <div class="mb-1"><b>Tel:</b> 063-161-6212</div>
+    <div class="mb-1"><b>Tel: </b>{{ TELEPHONE_NUMBER }}</div>
     <div class="flex">
       <b>Email:</b>&nbsp;kuntanut.s@gmail.com&nbsp;
       <div class="relative no-print cursor-default">
-        <div
-          class="bg-black txt-white border-black text-center"
-          style="width: 20px"
-          @mouseenter="setTooltip(true)"
-          @mouseleave="setTooltip(false)">
+        <div class="bg-black txt-white border-black text-center" style="width: 20px"
+             @mouseenter="setTooltip(true)" @mouseleave="setTooltip(false)">
           ?
         </div>
         <div v-show="mailTooltip" class="tooltip pa-1 bg-black txt-white border-black">
@@ -26,7 +24,7 @@ function setTooltip(bool: boolean) {
         </div>
       </div>
     </div>
-    <div><b>Github:</b> <a href="https://github.com/poomktn">https://github.com/poomktn</a></div>
+    <div><b>Github:</b> <a :href="GITHUB_LINK" target=”_blank”>{{ GITHUB_LINK }}</a></div>
   </Box>
 </template>
 <style lang="scss" scoped>

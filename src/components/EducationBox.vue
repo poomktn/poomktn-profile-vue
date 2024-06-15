@@ -1,6 +1,6 @@
 <template>
   <Box color="violet" class="mt-2" title="Education">
-    <p class="text-center">
+    <p class="text-center my-1">
       Chulalongkorn University, Bangkok, Thailand
       <br />
       Between 2016 - 2020
