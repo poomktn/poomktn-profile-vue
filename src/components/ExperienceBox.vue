@@ -1,9 +1,9 @@
 <script setup lang="ts">
-type ExperienceProps = {
+interface ExperienceProps {
   li: string
   txt: string
 }
-const exp: ExperienceProps[] = [
+const exp1: ExperienceProps[] = [
   {
     li: 'Magic Box Solutions Co., Ltd. / Feb 2023 - July 2024',
     txt: 'Working as a front-end developer, Mainly using React Hook, TypeScript as front-end frameworks for many products and projects',
@@ -12,6 +12,8 @@ const exp: ExperienceProps[] = [
     li: 'EdVISORY Co., Ltd. / Jan 2021 - Feb 2023',
     txt: 'Working as a front-end developer, Mainly using Nuxt, Vue (2&3) as front-end frameworks for many products and projects',
   },
+]
+const exp2: ExperienceProps[] = [
   {
     li: 'Senior Project (Video Repetition Analysis) / Feb - May 2020',
     txt: 'The group project using Python language, ffmpeg program and OpenCV library to create analysis video from repeating actions of archery sport to see a little different from each action',
@@ -61,9 +63,22 @@ const exp: ExperienceProps[] = [
 <template>
   <Box color="orange" class="mt-2" title="Experiences">
     <div id="experience">
-      <div v-for="{ li, txt } in exp" :key="li">
+      <div v-for="{ li, txt } in exp1" :key="li">
         <li class="txt-orange">{{ li }}</li>
-        <div class="py-1 ml-5">{{ txt }}.</div>
+        <div class="py-1 ml-5">
+          <span>{{ txt }}.</span>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        #####&nbsp;
+        <h5>University Period</h5>
+        &nbsp;#####
+      </div>
+      <div v-for="{ li, txt } in exp2" :key="li">
+        <li class="txt-orange">{{ li }}</li>
+        <div class="py-1 ml-5">
+          <span>{{ txt }}.</span>
+        </div>
       </div>
     </div>
   </Box>

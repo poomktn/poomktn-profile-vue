@@ -6,6 +6,7 @@ import {
   SkillBox,
   ExperienceBox,
   EducationBox,
+  SystemBox,
 } from './components'
 
 function print() {
@@ -31,6 +32,7 @@ function print() {
     </div>
     <IntroduceBox />
     <SkillBox />
+    <SystemBox />
     <ExperienceBox />
     <EducationBox />
     <div class="flex justify-center no-print mt-1">

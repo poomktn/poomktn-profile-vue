@@ -10,21 +10,30 @@ function setTooltip(bool: boolean) {
 </script>
 <template>
   <Box color="orange">
-    <div class="mb-1"><b>Tel: </b>{{ TELEPHONE_NUMBER }}</div>
+    <div class="mb-1">
+      <b>Tel: </b><span>{{ TELEPHONE_NUMBER }}</span>
+    </div>
     <div class="flex">
-      <b>Email:</b>&nbsp;kuntanut.s@gmail.com&nbsp;
+      <b>Email:</b>&nbsp;<span>kuntanut.s@gmail.com</span>&nbsp;
       <div class="relative no-print cursor-default">
-        <div class="bg-black txt-white border-black text-center" style="width: 20px"
-             @mouseenter="setTooltip(true)" @mouseleave="setTooltip(false)">
+        <div
+          class="bg-black txt-white border-black text-center"
+          style="width: 20px"
+          @mouseenter="setTooltip(true)"
+          @mouseleave="setTooltip(false)">
           ?
         </div>
         <div v-show="mailTooltip" class="tooltip pa-1 bg-black txt-white border-black">
-          Email is difference from name because I try my name as email but got invalid, so I decide
-          to change vowels of my name
+          <span>
+            Email is difference from name because I try my name as email but got invalid, so I
+            decide to change vowels of my name
+          </span>
         </div>
       </div>
     </div>
-    <div><b>Github:</b> <a :href="GITHUB_LINK" target=”_blank”>{{ GITHUB_LINK }}</a></div>
+    <div>
+      <b>Github:</b> <a :href="GITHUB_LINK" target="_blank">{{ GITHUB_LINK }}</a>
+    </div>
   </Box>
 </template>
 <style lang="scss" scoped>

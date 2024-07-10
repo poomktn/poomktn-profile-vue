@@ -2,22 +2,22 @@
 const skill: string[] = [
   'Programming languages: JavaScript, TypeScript, Python',
   'Moderate English writing and communication skills',
-  'Front-end frameworks: React Hook, Vue 2&3, Vuetify, Quasar, Nuxt, React-Native(Android)',
-  'UML design tools: Draw.io',
-  'Interface design tool: Figma',
+  'Front-end frameworks: React Hook, Vue 2&3, Vuetify, Quasar, Nuxt, React-Native(Android), ViteJS',
+  'State Management: Redux & Zustand (React Hook), Vuex (Vue 2), Pinia (Vue 3)',
+  'Page Routing: React Router (React Hook), Vue Router (Vue 2&3)',
+  'Code Editor and Extension: Visual Studio Code, ESLint, Prettier',
+  'Git GUI: Fork, Sourcetree',
   'Web hosting: Firebase',
-  'Screen drawing tool: Epic Pen',
+  'Database: SQL (in University)',
   'Python basic data science tools: Pandas, ScikitLearn',
 ]
 </script>
 <template>
   <Box color="green" class="mt-2" title="Main Skills">
     <div id="skill">
-      <div>
-        <li v-for="txt in skill" :key="txt" class="mb-1">
-          {{ txt }}
-        </li>
-      </div>
+      <li v-for="txt in skill" :key="txt" class="mb-1">
+        {{ txt }}
+      </li>
     </div>
   </Box>
 </template>
