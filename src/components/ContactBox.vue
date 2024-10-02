@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 const TELEPHONE_NUMBER = '092-416-4261'
-const GITHUB_LINK = 'https://github.com/poomktn'
+// const GITHUB_LINK = 'https://github.com/poomktn'
 const mailTooltip = ref(false)
 
 function setTooltip(bool: boolean) {
@@ -31,9 +31,9 @@ function setTooltip(bool: boolean) {
         </div>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <b>Github:</b> <a :href="GITHUB_LINK" target="_blank">{{ GITHUB_LINK }}</a>
-    </div>
+    </div> -->
   </Box>
 </template>
 <style lang="scss" scoped>
