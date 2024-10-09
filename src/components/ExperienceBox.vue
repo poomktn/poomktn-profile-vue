@@ -2,15 +2,18 @@
 interface ExperienceProps {
   li: string
   txt: string
+  detail?: string
 }
 const exp1: ExperienceProps[] = [
   {
     li: 'Magic Box Solutions Co., Ltd. / Feb 2023 - July 2024',
     txt: 'Working as a front-end developer, Mainly using React Hook, TypeScript as front-end frameworks for many products and projects',
+    detail: 'Foreign tailor, Car Insurance, Meeting Room, KYC'
   },
   {
     li: 'EdVISORY Co., Ltd. / Jan 2021 - Feb 2023',
     txt: 'Working as a front-end developer, Mainly using Nuxt, Vue (2&3) as front-end frameworks for many products and projects',
+    detail: 'ERP, University Website, Housing Estate'
   },
 ]
 const exp2: ExperienceProps[] = [
@@ -63,10 +66,12 @@ const exp2: ExperienceProps[] = [
 <template>
   <Box color="orange" class="mt-2" title="Experiences">
     <div id="experience">
-      <div v-for="{ li, txt } in exp1" :key="li">
+      <div v-for="{ li, txt, detail } in exp1" :key="li">
         <li class="txt-orange">{{ li }}</li>
         <div class="py-1 ml-5">
           <span>{{ txt }}.</span>
+          <br>
+          <span>- {{ detail }}</span>
         </div>
       </div>
       <div class="flex justify-center">
@@ -86,7 +91,7 @@ const exp2: ExperienceProps[] = [
 <style scoped lang="scss">
 #experience {
   li::marker {
-    content: '☩ ';
+    content: '▷ ';
   }
 }
 </style>

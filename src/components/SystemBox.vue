@@ -20,7 +20,7 @@ const system: string[] = [
 <style scoped lang="scss">
 #system {
   li::marker {
-    content: '♱ ';
+    content: '▷ ';
   }
 }
 </style>

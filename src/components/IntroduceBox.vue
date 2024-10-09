@@ -1,7 +1,7 @@
 <template>
-  <Box color="gold" class="mt-2" title="Introduce Myself">
-    <div class="pa-2">
-      A front-end developer who seeks motivation, knowledge and experience from goals.
+  <Box color="gold" class="mt-1" title="Introduce Myself">
+    <div class="pa-1">
+      The man who relentlessly seeks discipline, knowledge and motivation from set achievable goals.
     </div>
   </Box>
 </template>

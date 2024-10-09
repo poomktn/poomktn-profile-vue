@@ -16,7 +16,7 @@
 <style lang="scss" scoped>
 #interest {
   li::marker {
-    content: '☨ ';
+    content: '▷ ';
   }
 }
 </style>
