@@ -17,8 +17,8 @@ function print() {
   <div class="App">
     <div class="flex justify-center">
       <img
-        width="300"
-        height="300"
+        width="280"
+        height="280"
         :src="require('@/assets/images/profile.jpg')"
         alt=""
         class="profile-img" />
