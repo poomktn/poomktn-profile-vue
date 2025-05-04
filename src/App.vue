@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import {
   ContactBox,
-  InterestBox,
-  IntroduceBox,
   SkillBox,
   ExperienceBox,
   EducationBox,
@@ -17,20 +15,19 @@ function print() {
   <div class="App">
     <div class="flex justify-center">
       <img
-        width="280"
-        height="280"
+        width="200"
+        height="200"
         :src="require('@/assets/images/profile.jpg')"
         alt=""
         class="profile-img" />
       <div class="ml-2">
         <ContactBox />
-        <Box color="black" class="my-2 text-center">
-          <h2>Mr. Kantanat Siripipatworakun</h2>
+        <Box color="black" class="my-3 text-left">
+          <h2>Eng: Kantanat Siripipatworakun</h2>
+          <h2>TH: &nbsp;กันตณัฐ สิริพิพัฒน์วรคุณ</h2>
         </Box>
-        <InterestBox />
       </div>
     </div>
-    <IntroduceBox />
     <SkillBox />
     <SystemBox />
     <ExperienceBox />

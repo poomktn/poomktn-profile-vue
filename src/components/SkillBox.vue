@@ -1,19 +1,20 @@
 <script setup lang="ts">
 const skill: string[] = [
-  'Programming languages: JavaScript, TypeScript, Python, Ruby, C++, Java',
-  'Moderate English writing and communication skills',
-  'Front-end frameworks: React Hook, Vue 2&3, ViteJS, Vuetify, Quasar, Nuxt, React-Native(Android)',
+  'Programming languages: TypeScript, JavaScript, Python, Ruby, C++, Java',
+  'Front-end frameworks: React Hook, Vue 2&3, ViteJS, NuxtJS, NextJS',
+  'Back-end frameworks: NestJS, TypeORM',
   'State Management: Redux & Zustand (React Hook), Vuex (Vue 2), Pinia (Vue 3)',
   'Page Routing: React Router (React Hook), Vue Router (Vue 2&3)',
   'Code Editor and Extension: Visual Studio Code, ESLint, Prettier',
   'Git tools: GitHub, GitLab, Fork, Sourcetree',
   'Web hosting: Firebase',
-  'Database: SQL (in University)',
+  'Database Tools: SQL, DBeaver',
   'Python basic data science tools: Pandas, ScikitLearn',
+  'Moderate English writing and communication skills',
 ]
 </script>
 <template>
-  <Box color="green" class="mt-2" title="Main Skills">
+  <Box color="blue" class="mt-2" title="Main Skills">
     <div id="skill">
       <li v-for="txt in skill" :key="txt" class="mb-1">
         {{ txt }}
