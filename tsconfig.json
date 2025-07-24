@@ -12,13 +12,11 @@
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": "src",
-    "types": [
-      "webpack-env"
-    ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["./*"],
+      "@assets/*": ["./assets/*"],
+      "@components": ["./components"],
+      "@components/*": ["./components/*"]
     },
     "lib": [
       "esnext",

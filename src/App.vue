@@ -5,7 +5,8 @@ import {
   ExperienceBox,
   EducationBox,
   SystemBox,
-} from './components'
+} from '@components'
+import { profileImg } from '@assets/images'
 
 function print() {
   window.print()
@@ -17,7 +18,7 @@ function print() {
       <img
         width="200"
         height="200"
-        :src="require('@/assets/images/profile.jpg')"
+        :src="profileImg"
         alt=""
         class="profile-img" />
       <div class="ml-2">
@@ -38,8 +39,8 @@ function print() {
   </div>
 </template>
 <style lang="scss">
-@import '@/assets/styles/index';
-@import '@/assets/styles/main';
+@use '@assets/styles/index';
+@use '@assets/styles/main';
 li::marker {
   font-size: 24px;
 }
